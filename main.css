@@ -92,6 +92,13 @@ div.hero h2 {
 }
 
 /*<!-- This is an A11y Change --> */
+
+.container div.text-box h2{
+
+    color:#4466B3;
+
+}
+
 .container div.text-box h3{
     font-size: 3.0em;
     display: inline-block;
