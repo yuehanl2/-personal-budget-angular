@@ -2,33 +2,17 @@ const express = require('express');
 const app = express();
 const port = 3000;
 
-app.use('/', express.static('public'));
 
-const budget = {
-    
-    
-    myBudget: [
-    {
-        title:'Eat out',
-        budget:25
-    },
-    {
-        title:'Rent',
-        budget:375
-    },
-    {
-        title:'Groceries',
-        budget:110
-    },
-]
-};
+//fetch("./budget.json")
+
+app.use('/', express.static('public'));
 
 app.get('/hello', (req, res) =>  {
     res.send('Hello World!');
 });
 
 app.get('/budget',(req, res)=>{
-    res.json(budget);
+    res.sendFile(__dirname+'/budget.json');
 });
 
 app.listen(port, () => {
