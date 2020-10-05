@@ -1,10 +1,7 @@
-{
-    
-    
-    "myBudget": [
+[
     {
         "title":"Eat out",
-        "budget":50
+        "budget":70
     },
     {
         "title":"Rent",
@@ -16,7 +13,7 @@
     },
 
     {
-        "title":"Electricity bill",
+        "title":"Electricity",
         "budget":70
 
     },
@@ -36,5 +33,5 @@
 
     }
     ]
- }
+
 
