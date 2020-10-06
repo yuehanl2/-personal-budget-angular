@@ -157,7 +157,7 @@
      
 
     function getBudget(){
-        axios.get('/budget')
+        axios.get('http://localhost:3000/budget')
         .then(function (res){
             console.log(res.data);
             for (var i = 0; i < res.data.length; i++){
@@ -173,7 +173,7 @@
 
 var color = d3.scale.category20();
 
-d3.json("/budget", function (data){
+d3.json("http://localhost:3000/budget", function (data){
 
 	var vis = d3.select('#d3Pie')
        .append("svg:svg")
